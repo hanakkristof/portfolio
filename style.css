@@ -5,14 +5,55 @@
   align-items: center;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 #valami{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50vh;
 }
+#work{
+  height: 320vh;
+  display: flex;
+  align-items: center;
+  gap:  20px;
+}
+#innerpr{
+  display: flex;
+  
+}
+.myworks{
+  border: lightgrey 2px solid;
+  background-color: white;
+  width: 60vw;
+  display: flex;
+  border-radius: 3.5%;
+}
+#munkaImg{
+  width: 100%;
+  height: 100%;
+}
+
+.workkep{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+  height: 50%;
+}
 
 
+
+.workszoveg{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 a{
   font-weight: bold;
@@ -28,7 +69,7 @@ a:hover{
 }
 
 body{
-  background-color: orange;
+  background-color: rgb(161, 252, 119);
   min-height: 400vh;
   max-width: 100vw;
   margin: 0px;
@@ -38,7 +79,7 @@ body{
 
 .container{
   display: flex;
-  background-color: orange;
+  background-color: rgb(161, 252, 119);
   min-height: 100vh;
   max-width: 100vw;
   justify-content: center;
@@ -70,14 +111,14 @@ section{
 }
 
 
-ul{
+.header ul{
   display: flex;
   flex-direction: row;
   gap: 20px;
   list-style: none;
 }
 
-h1{
+.smalltitle{
   font-size: 50px;
 }
 
@@ -156,7 +197,7 @@ img{
   display: inline-block;
   margin: auto;
   width: 100%;
-  background-color: orange;
+  background-color: rgb(161, 252, 119);
   padding-top: 10px;
 }
 .section1 a{
@@ -171,4 +212,80 @@ img{
 }
 .wrapper {
   text-align: center;
+}
+
+#name{
+  color: gray;
+  text-align: center;
+
+}
+
+blockquote{
+  color: darkolivegreen;
+  font: 14px/22px normal helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;  
+  background-color: lightgreen
+}
+
+#contacts{
+  display: flex;
+  gap: 10px;
+}
+
+form{
+  background-color: rgb(184, 184, 184);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  height: 420px;
+  box-shadow: black 5px 5px 5px;
+}
+
+iframe{
+  box-shadow: black 5px 5px 5px;
+}
+
+#formh1{
+  color: black;
+  text-align: center;
+}
+
+input{
+  box-shadow: grey 5px 3px 5px;
+}
+
+#msg{
+  height: 25%;
+}
+
+#contactjaim{
+  display: flex;
+  flex-direction: column;
+  background-color: lightgreen;
+  justify-content: center;
+}
+
+#contacts ul{
+  list-style-type: none;
+}
+
+@media only screen and (max-width:768px){
+  #munkaImg{
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  #contacts{
+    flex-direction: column;
+  }
+
+  #innerpr{
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
 }
